@@ -20,5 +20,5 @@ script:
 
 deploy:
   provider: pages:git
-  token: GITHUB_TOKEN
+  token: $GITHUB_TOKEN
   edge: true

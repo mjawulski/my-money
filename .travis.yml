@@ -16,9 +16,11 @@ install:
   - npm install
 
 script:
+  - npm run build:production
   - npm run test -- --watch=false --no-progress --browsers=ChromeHeadlessNoSandbox
 
 deploy:
   provider: pages:git
   token: $GITHUB_TOKEN
+  local_dir: dist/my-money
   edge: true

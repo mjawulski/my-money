@@ -1,0 +1,19 @@
+.app-name {
+  margin-left: 8px;
+}
+
+.menu-list a {
+  color: rgba(0, 0, 0, 0.54);
+}
+
+.menu-list a.menu-item {
+  font-size: 1.5em;
+}
+
+.menu-item-text {
+  margin-left: 20px;
+}
+
+.grey-color {
+  color: rgba(0, 0, 0, 0.54);
+}

@@ -17,7 +17,7 @@ install:
 
 script:
   - npm run build:production
-  # - npm run test --watch=false --no-progress --browsers=ChromeHeadlessNoSandbox
+  - npm run test:ci
 
 deploy:
   provider: pages:git

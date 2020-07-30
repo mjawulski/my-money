@@ -1,0 +1,20 @@
+.bond-overview-card {
+  width: 300px;
+  float: left;
+  margin: 10px;
+}
+
+.bond-amount {
+  width: 20px;
+  padding: 7px;
+  border-radius: 50%;
+  float: right;
+  background: #ff4081;
+  color: white;
+}
+
+.bond-current-value {
+  text-align: center;
+  font-weight: 500;
+  font-size: 1.5em;
+}

@@ -8,14 +8,19 @@ describe('BondOverviewComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ BondOverviewComponent ]
-    })
-    .compileComponents();
+      declarations: [BondOverviewComponent],
+    }).compileComponents();
   }));
 
   beforeEach(() => {
     fixture = TestBed.createComponent(BondOverviewComponent);
     component = fixture.componentInstance;
+    component.bond = {
+      name: 'EDO0430',
+      purchaseDate: '2020-04-29',
+      amount: 12,
+      actualValue: 1208.16,
+    };
     fixture.detectChanges();
   });
 

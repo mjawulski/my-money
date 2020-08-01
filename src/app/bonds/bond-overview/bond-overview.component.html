@@ -1,11 +1,20 @@
 <mat-card class="bond-overview-card">
-  <div class="bond-amount">12</div>
+  <div class="bond-amount">{{ bond.amount }}</div>
   <mat-card-header>
-    <mat-card-title>EDO0430</mat-card-title>
-    <mat-card-subtitle>2030-04-29</mat-card-subtitle>
+    <mat-card-title>{{ bond.name }}</mat-card-title>
+    <mat-card-subtitle>{{ bond.purchaseDate }}</mat-card-subtitle>
   </mat-card-header>
-  <div class="bond-current-value">1208.16 zł</div>
+  <div class="bond-current-value">
+    <!-- {{ bond.actualValue | currency: 'PLN':'symbol':'4.2-2':'pl' }} -->
+    {{ bond.actualValue }} zł
+  </div>
   <mat-card-actions align="end">
-    <a mat-raised-button href="https://www.google.com/" target="_blank" color="accent">Szczegóły</a>
+    <a
+      mat-raised-button
+      href="https://www.google.com/"
+      target="_blank"
+      color="accent"
+      >Szczegóły</a
+    >
   </mat-card-actions>
 </mat-card>
